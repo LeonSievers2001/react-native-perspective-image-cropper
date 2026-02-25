@@ -6,10 +6,11 @@ def safeExtGet(prop, fallback) {
 
 buildscript {
     repositories {
-        jcenter()
+        google()
+        mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0'
+        classpath("com.android.tools.build:gradle:4.2.1")
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -19,8 +20,19 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
+    namespace 'fr.michaelvilleneuve.customcrop'
     compileSdkVersion safeExtGet('compileSdkVersion', 28)
     buildToolsVersion safeExtGet('buildToolsVersion', '28.0.3')
+
+    packagingOptions {
+        pickFirst '**/*.so'
+    }
+
+    buildFeatures {
+        aidl = true
+        buildConfig = true
+    }
+
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion', 16)
         targetSdkVersion safeExtGet('targetSdkVersion', 28)
@@ -32,6 +44,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.websitebeaver:opencv:4.1.0'
+    implementation project(':openCVLibrary455')
     implementation 'com.facebook.react:react-native:+'
 }
