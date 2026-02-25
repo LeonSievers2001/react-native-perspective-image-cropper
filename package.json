@@ -1,35 +1,24 @@
 {
-	"name": "react-native-perspective-image-cropper",
-	"version": "0.4.13",
-	"description": "React native library allowing you to make custom crop and perspective corrections on photos",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"scripts": {
-		"build": "tsc --project tsconfig.json",
-		"prepublishOnly": "npm run build"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/datobs/react-native-perspective-image-cropper"
-	},
-	"keywords": [
-		"react-native",
-		"scanner",
-		"crop"
-	],
-	"author": "Michaël Villeneuve",
-	"license": "MIT",
-	"peerDependencies": {
-		"react": "^17.0.2 || ^18.0.0 || ^19.0.0",
-		"react-native": ">=0.70",
-		"react-native-svg": "^15.3.0"
-	},
-	"devDependencies": {
-		"@types/react": "^18.2.33",
-		"@types/react-native": "^0.72.5",
-		"react": "^18.2.0",
-		"react-native": "^0.72.6",
-		"react-native-svg": "^15.3.0",
-		"typescript": "^5.2.2"
-	}
+  "name": "react-native-perspective-image-cropper",
+  "version": "0.4.9",
+  "description": "React native library allowing you to make custom crop and perspective corrections on photos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Michaelvilleneuve/react-native-perspective-image-cropper"
+  },
+  "keywords": [
+    "react-native",
+    "scanner",
+    "crop"
+  ],
+  "author": "Michaël Villeneuve",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-native": "0.71.14"
+  }
 }
