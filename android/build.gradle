@@ -30,8 +30,8 @@ android {
             useLegacyPackaging = true
         }
 
-        exclude "base/lib/x86_64/libopencv_java3.so"
-        exclude "base/lib/x86_64/libopencv_java4.so"
+        exclude "jniLibs/arm64-v8a/libopencv_java3.so"
+        exclude "jniLibs/arm64-v8a/libopencv_java4.so"
         exclude "jniLibs/x86_64/libopencv_java3.so"
         exclude "jniLibs/x86_64/libopencv_java4.so"
     }
